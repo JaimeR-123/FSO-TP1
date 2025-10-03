@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Configuração - VS Code</title>
+    <link rel="stylesheet" href="CSS/style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="meuTexto">Hello World</h1>
+        
+        <button onclick="mudarCor()">Mudar Cor</button>
+
+        <script>
+            function mudarCor(){
+                //let texto = document.getElementsByTagName(h1);
+                let texto = document.getElementById("meuTexto");
+                if (texto.style.color == "rgb(255, 0, 0)"){
+                    texto.style.color = "rgb(0, 255, 0)";
+                } else{
+                    texto.style.color = "rgb(255, 0, 0)";
+                }
+            }
+        </script>
+    </div>
+</body>
